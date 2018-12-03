@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppTrivial"
+             x:Class="AppTrivial.MainPage">
+
+    <StackLayout>
+        <Label x:Name="label_points" Text="0 puntos" HorizontalOptions="End" FontSize="Large"></Label>
+        <StackLayout x:Name="myCard">
+
+            <!-- Place new controls here -->
+            <Label x:Name="label_question" FontSize="20" Text="" 
+           HorizontalOptions="Center"
+           VerticalOptions="Start" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand">
+            <Button x:Name="button_prev" Text="Anterior" Clicked="Button_Prev" HorizontalOptions="FillAndExpand" IsEnabled="False"></Button>
+            <Button x:Name="button_next" Text="Siguiente" Clicked="Button_Next" HorizontalOptions="FillAndExpand"></Button>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
